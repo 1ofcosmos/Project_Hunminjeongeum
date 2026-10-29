@@ -1,0 +1,116 @@
+/* All rules are opt-in for handheld devices. styles.css is the unchanged PC design. */
+html.touch-layout{--hud:var(--touch-hud,70px);background:#0c110e;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.touch-layout body{overflow:hidden;overscroll-behavior:none}
+.touch-layout #safe-area-probe{
+  position:fixed;inset:0;visibility:hidden;pointer-events:none;
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);
+}
+.touch-layout #game-shell{
+  position:fixed;left:var(--fit-left,0px);top:var(--fit-top,0px);
+  width:1280px;height:720px;min-width:0;min-height:0;
+  transform:scale(var(--fit-scale,1));transform-origin:0 0;
+  visibility:hidden;
+}
+.touch-layout.touch-viewport-ready #game-shell{visibility:visible}
+.touch-layout button,.touch-layout a,.touch-layout summary,.touch-layout select{touch-action:manipulation}
+
+/* Neutralize physical viewport units inside the virtual 1280 x 720 scene. */
+.touch-layout .game-logo{font-size:179.2px;top:7px;transform:translate(0,0) scale(.2)}
+.touch-layout .game-logo.logo-grand{transform:translate(-50%,-50%) scale(1)}
+.touch-layout .logo-subtitle{font-size:var(--touch-note)}
+.touch-layout .npc-sprite-rig{width:calc(547.2px * var(--sprite-aspect))}
+.touch-layout #game{background-size:100% 100%,contain;background-repeat:no-repeat}
+.touch-layout .palace{background-size:100% 100%,100% 100%,contain;background-repeat:no-repeat}
+.touch-layout .scene-bg{background-size:100% 100%,contain;background-repeat:no-repeat}
+.touch-layout .map-art{inset:auto;top:0;left:50%;width:1279.319872px;height:720px;transform:translateX(-50%)}
+.touch-layout .map-art>img{object-fit:contain}
+
+.touch-layout .topbar{padding-left:200px}
+.touch-layout .chapter-label{font-size:var(--touch-small);letter-spacing:1px}
+.touch-layout .topbar nav button{min-height:var(--touch-hit-height);font-size:var(--touch-ui);padding:8px 14px}
+.touch-layout .topbar nav{gap:8px}
+.touch-layout .scene-location{font-size:var(--touch-small);letter-spacing:1px}
+.touch-layout .speaker{font-size:var(--touch-speaker)}
+.touch-layout .speaker small{font-size:var(--touch-small);letter-spacing:1px}
+.touch-layout .dialogue-text{font-size:var(--touch-body);line-height:1.4;margin:0;min-height:0}
+.touch-layout .dialogue{height:22%;max-height:23%;min-height:0;padding:12px 26px;row-gap:6px}
+.touch-layout .continue-button{font-size:var(--touch-ui);min-height:var(--touch-next-height);padding:2px 8px}
+.touch-layout .dialogue-actions .text-button{font-size:var(--touch-ui)}
+.touch-layout .question-choices{gap:var(--touch-gap)}
+.touch-layout .question{font-size:var(--touch-body);line-height:1.3;min-height:var(--touch-choice-height);padding:8px 12px;gap:12px}
+.touch-layout .question small{font-size:var(--touch-small);letter-spacing:0}
+.touch-layout .map-spot{min-width:calc(68px / var(--fit-scale));min-height:var(--touch-hit-height);height:auto;padding:8px}
+.touch-layout .map-spot strong{font-size:var(--touch-body);margin-bottom:5px}
+.touch-layout .map-spot small,.touch-layout .map-hud{font-size:var(--touch-small)}
+.touch-layout .map-hud{gap:16px}
+.touch-layout .map-hint{font-size:var(--touch-small)}
+.touch-layout .map-hud .primary{font-size:var(--touch-ui);min-height:var(--touch-choice-height)}
+.touch-layout .lesson-card{min-height:var(--touch-hit-height);padding:14px 18px;gap:12px}
+.touch-layout .lesson-card strong{font-size:var(--touch-speaker)}
+.touch-layout .lesson-card small{font-size:var(--touch-small);letter-spacing:1px}
+.touch-layout .menu-invitation{font-size:var(--touch-note);margin-bottom:20px}
+.touch-layout .home-actions{margin-top:16px}
+.touch-layout .home-actions button{font-size:var(--touch-ui);min-height:var(--touch-choice-height)}
+.touch-layout .intro-copy{max-height:86%;overflow-y:auto}
+.touch-layout .intro-copy p{font-size:var(--touch-note);line-height:1.7}
+.touch-layout .intro-copy h2{font-size:48px}
+.touch-layout .intro-copy .eyebrow,.touch-layout .intro-progress{font-size:var(--touch-small)}
+.touch-layout .narration p{font-size:var(--touch-narration);line-height:1.7}
+.touch-layout .narration-index{font-size:var(--touch-small)}
+.touch-layout .opening-controls .skip{font-size:var(--touch-ui);min-height:var(--touch-hit-height)}
+.touch-layout #advance-hint{font-size:var(--touch-small);right:22px;bottom:4px}
+.touch-layout #toast{font-size:var(--touch-body)}
+
+/* Short landscape phone displays get readable dialogue without cutting the scene. */
+.touch-layout.touch-compact .dialogue{height:35%;max-height:35%;padding:8px 22px;row-gap:4px}
+.touch-layout.touch-compact .speaker{gap:14px}
+.touch-layout.touch-compact .speaker small{letter-spacing:0}
+.touch-layout.touch-compact .npc-scene[data-phase="choices"] .dialogue{height:22%;max-height:22%}
+.touch-layout.touch-compact .question-choices{
+  top:calc(var(--hud) + 8px);bottom:26%;max-height:none;
+  overflow-y:auto;overscroll-behavior:contain;
+}
+.touch-layout.touch-compact .question{padding:4px 10px;line-height:1.2;gap:8px;flex-shrink:0}
+.touch-layout.touch-compact .question small{max-width:25%;white-space:normal;line-height:1.15}
+.touch-layout.touch-compact .map-hud{gap:12px;padding:8px 12px;left:20px;bottom:16px}
+.touch-layout.touch-compact .map-hint{display:block;max-width:480px}
+.touch-layout.touch-compact #toast{bottom:39%}
+
+/* Learning screens retain all controls; long text and evidence lists scroll internally. */
+.touch-layout .study-heading{align-items:flex-start}
+.touch-layout .study-heading h1{font-size:var(--touch-speaker)}
+.touch-layout .study-heading p,.touch-layout .study-heading .eyebrow{font-size:var(--touch-small)}
+.touch-layout .source-box .eyebrow,.touch-layout .spirit-card .eyebrow{font-size:var(--touch-small)}
+.touch-layout .instruction,.touch-layout .report-hints,.touch-layout .evidence small{font-size:var(--touch-small)}
+.touch-layout .evidence,.touch-layout .report label,.touch-layout .report-read,.touch-layout .spirit-feedback{font-size:var(--touch-body)}
+.touch-layout .evidence-tags{font-size:var(--touch-small)}
+.touch-layout .category h3,.touch-layout .spirit-card blockquote{font-size:var(--touch-speaker)}
+.touch-layout .assigned,.touch-layout .source-box small,.touch-layout .report-header p,.touch-layout .report-date{font-size:var(--touch-small)}
+.touch-layout .source-box p,.touch-layout .source-box .original{font-size:var(--touch-body)}
+.touch-layout .spirit-card select,.touch-layout .study-mode .primary,.touch-layout .study-mode .secondary,.touch-layout .category-add{font-size:var(--touch-ui);min-height:var(--touch-choice-height)}
+.touch-layout .report textarea{font-size:var(--touch-body);line-height:1.7}
+.touch-layout .report-header h1{font-size:var(--touch-narration)}
+.touch-layout .assigned button{min-width:var(--touch-choice-height);min-height:var(--touch-choice-height)}
+.touch-layout .action-row{flex-wrap:wrap}
+.touch-layout #game.study-mode,.touch-layout .dialogue-text,.touch-layout .intro-copy,.touch-layout .question-choices{
+  -webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-y;
+}
+.touch-layout .evidence{touch-action:pan-y}
+
+/* Native dialogs are outside the scaled game and fit above the software keyboard. */
+.touch-layout dialog{
+  position:fixed;inset:auto;left:var(--fit-center-x);top:var(--fit-center-y);margin:0;
+  transform:translate(-50%,-50%);width:min(580px,calc(var(--fit-available-width) - 20px));
+  max-width:calc(var(--fit-available-width) - 20px);max-height:calc(var(--fit-available-height) - 20px);
+  padding:18px;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+}
+.touch-layout dialog.records{width:min(940px,calc(var(--fit-available-width) - 20px))}
+.touch-layout dialog button,.touch-layout dialog summary{min-height:36px}
+.touch-layout dialog input:not([type="checkbox"]),.touch-layout dialog textarea,.touch-layout dialog select{font-size:16px}
+.touch-layout dialog .report{padding:20px}
+.touch-layout dialog .report label,.touch-layout dialog .report-read{font-size:16px}
+.touch-layout dialog .report-header h1{font-size:24px}
+.touch-layout dialog .report-header p,.touch-layout dialog .report-date{font-size:12px}
+.touch-layout dialog .evidence{font-size:14px}
+.touch-layout dialog .evidence small,.touch-layout dialog .evidence-tags{font-size:11px}
+.touch-layout dialog .settings-row,.touch-layout dialog .record-tabs{flex-wrap:wrap}
