@@ -95,8 +95,9 @@
       "current_sha256": "29019ec35954b910c53cc67ea33406c29c0129b22e64aa6a83885bc98342c10e"
     },
     "app.js": {
-      "previous_sha256": "de8726d2ceeaaabc2eb16e20384d3a84ff238a17ce00bed4eaedf0e4968f5cee",
-      "current_sha256": "951d56f5ec4163dca94e9c171895e44fc9cb3244a7b5b2bc346a54f5b1629ca6",
+      "previous_sha256": "951d56f5ec4163dca94e9c171895e44fc9cb3244a7b5b2bc346a54f5b1629ca6",
+      "current_sha256": "175c7e724697bc97cb087a4edc5ccd03de0df315ab6c098a93defde19500cf4e",
+      "reason_latest_15": "home()에서 '이야기 안내' 버튼(data-action=\"guide\")을 제거. 해당 안내 모달을 열던 action==='guide' 디스패처 분기는 삭제하지 않고 그대로 유지(더 이상 호출되지 않는 코드로 남음). '오프닝 다시 보기' 버튼과 나의 기록/설정/메인으로 등 다른 상단 버튼·기능은 변경하지 않음.",
       "reason_latest_14": "currentNPC3Line()의 'choices'(idle) 분기가 script.idleExpression을 사용하도록 변경(기존에는 항상 'happy'로 고정되어 질문 사이 대기 상태의 표정이 바뀌지 않았음). 설정에 '3차시 초기화' 버튼 추가: requestChapter3Reset()/confirmChapter3Reset() 함수로 확인 모달(취소 시 변화 없음)을 띄우고, 확인 시 defaults()의 기본값으로 checkpoint3/royal3IntroDone/royal3Line/royal3bLine/chapter3Done을 되돌리고 changeCards=[]/changeAsked={}/chapter3Reflection={text:'',savedAt:null}로 초기화, npcFlow3도 null로 정리. 1·2차시 필드, 닉네임, preferences, requestChapter2Reset/confirmReset 로직은 변경하지 않음. settings()의 reset-section 버튼 순서를 2차시 초기화→3차시 초기화→모든 진행 기록 초기화로 재배열, modal cancel(ESC) 처리에 'reset3-confirmation' 모드 추가.",
       "reason_latest_13": "3차시 NPC 이미지 렌더링을 1차시와 같은 bounds-정규화 스프라이트 rig로 교체. npc3Sprite()/setNPC3Expression()/mountNPC3Sprite() 신규 함수를 추가(1차시의 npcSprite()/setNPCExpression()/mountNPCSprite()·D.npcVisuals는 '읽기'만 하고 수정하지 않음). npc3()가 더 이상 <img src>를 직접 교체하지 않고, basic/gomin/happy 세 프레임을 모두 같은 bounds-높이 기준으로 배치하는 .character-slot/.npc-sprite-rig/.npc-pose 구조(1차시와 동일 CSS 재사용, 새 CSS 없음)를 사용하도록 변경 — 표정 전환 시 위치 흔들림과 화질 저하를 해결. 두 프레임 모두 decode() 완료 후에만 표시(mountNPC3Sprite, 기존 mountNPCSprite와 동일한 preload 로직)해 깜빡임 방지.",
       "reason_latest_12": "3차시 보완 3건. (1) map3notice()에서 가상 상황 안내 문구 렌더링 제거. (2) npc3()가 생성하는 section에 .npc-scene 클래스와 data-speaker 속성(nextSpeaker 기준)을 추가해 1차시 .npc-scene[data-speaker] 대사창 색상/화자명 배경 규칙을 그대로 재사용하도록 수정(새 색상 정의 없음). (3) enterNPC3()/npc3()를 재작성: npcFlow3에 expression 필드 추가, 현재 줄이 npc 발화이면 그 줄의 expression('happy'/'basic')을 적용. 같은 인물일 때는 game.innerHTML 전체 재생성 대신 기존 .npc3-scene을 재사용하고 #npc3-char-img의 src만 교체(.npc3-fade 클래스로 페이드), 대화 내용(.npc3-interface)만 갈아끼움.",
