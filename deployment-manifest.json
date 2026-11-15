@@ -1,0 +1,273 @@
+{
+  "repository": "Project_Hunminjeongeum",
+  "created_date_kst": "2026-10-29",
+  "entry": "index.html",
+  "publishing_source": "main / (root)",
+  "runtime_files": [
+    {
+      "path": "index.html",
+      "bytes": 1951,
+      "sha256": "d3a45ff4f0fae35586aeebf5cdb5c754845522cf9fe9fc586736401437512619"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 37786,
+      "sha256": "0f6e2624ada5348d414ff40ba75c86f2ef99c64a6e7edec154c409ef93af6ef1"
+    },
+    {
+      "path": "data.js",
+      "bytes": 44007,
+      "sha256": "830f661ce17f31e0a41ffcea602df8a9ac23cbb98e6b9c6bd0c7bd6797d6ec34"
+    },
+    {
+      "path": "npc-dialogues.js",
+      "bytes": 21151,
+      "sha256": "5ef46d96e08529b26aea7ca05baa9207f4022721fe3d781b7d19ae0ef5d80ccb"
+    },
+    {
+      "path": "app.js",
+      "bytes": 143695,
+      "sha256": "951d56f5ec4163dca94e9c171895e44fc9cb3244a7b5b2bc346a54f5b1629ca6"
+    },
+    {
+      "path": "assets/backgrounds/bg_farm.png",
+      "bytes": 3434525,
+      "sha256": "063bb783fc4c3e68e770027fe39569a090a5653b759f59d0f6dad0f89f63867a"
+    },
+    {
+      "path": "assets/backgrounds/bg_house.png",
+      "bytes": 3082109,
+      "sha256": "c05d0d81f529ffb1f18d46f4bd1e37e7a0bc7f3b99ef1bf9ecab471af609c8e4"
+    },
+    {
+      "path": "assets/backgrounds/bg_markek.png",
+      "bytes": 2990941,
+      "sha256": "eab71e199ca99816610694c99c8ad4f14a64e042f10627ce94f12993d959af4d"
+    },
+    {
+      "path": "assets/backgrounds/bg_place.png",
+      "bytes": 2911426,
+      "sha256": "1d66811ad0148c6b725907d43b6ad5a4afa93b28aea3cc3d105f6b4e650c7f44"
+    },
+    {
+      "path": "assets/backgrounds/bg_school.png",
+      "bytes": 2779046,
+      "sha256": "d09dfbdaa68f49502aa66dff945203846a4a0a1ef1d24a302ba715f8a6f9527d"
+    },
+    {
+      "path": "assets/backgrounds/bg_village_map.png",
+      "bytes": 3951594,
+      "sha256": "4d45e89a6e5b6d0fc09b3c2df3f16d38d09edb042ac3bb11799b6afbdf4edeca"
+    },
+    {
+      "path": "assets/characters/bakyeonhwa_basic.png",
+      "bytes": 117157,
+      "sha256": "09b3392348a6908fc8a3cf02a8556f168e319a4ef6617c2e0379943769cbfba3"
+    },
+    {
+      "path": "assets/characters/bakyeonhwa_gomin.png",
+      "bytes": 117373,
+      "sha256": "0d04ad7176138521abc2dd63079365429c2a7c637007e23c71f4f52123966f72"
+    },
+    {
+      "path": "assets/characters/bakyeonhwa_happy.png",
+      "bytes": 332700,
+      "sha256": "8a5c75ad0ac61e74e083055a3f243124919388288727ec996a68525952e46bd2"
+    },
+    {
+      "path": "assets/characters/choiducksu_basic.png",
+      "bytes": 650755,
+      "sha256": "d74f820d1882f3a692d0aafee546bc52f68c41099fc0add357dc2bd0aa026539"
+    },
+    {
+      "path": "assets/characters/choiducksu_gomin.png",
+      "bytes": 573821,
+      "sha256": "ad0efe6aa01e9ca6fc41e7864b09bdb3b6d443afc5ed268ceaf0b41c3205623c"
+    },
+    {
+      "path": "assets/characters/choiducksu_happy.png",
+      "bytes": 386737,
+      "sha256": "faa50d480eca0bbcab789898f496fd6d9e6ec73f3699e8b01330925065bde806"
+    },
+    {
+      "path": "assets/characters/kimmanbok_basic.png",
+      "bytes": 129603,
+      "sha256": "b03c2acaf24c0869549d22f45ecd645bb609ba9d74ed9c7add891eedbcfbdbc2"
+    },
+    {
+      "path": "assets/characters/kimmanbok_gomin.png",
+      "bytes": 125935,
+      "sha256": "f580bc11913a548f07a33a7c0e2a2b0de88181fd52044325c47272bb1f963096"
+    },
+    {
+      "path": "assets/characters/kimmanbok_happy.png",
+      "bytes": 404681,
+      "sha256": "090021982f0dea60f0e7badd2ddef479ef7661a8f55fa41bff06fd21ddfac64d"
+    },
+    {
+      "path": "assets/characters/leedohyeon_basic.png",
+      "bytes": 377814,
+      "sha256": "e452f4ad65db76d1e9e291d43eaa335a1b700acc86b8e8956717643e687165fe"
+    },
+    {
+      "path": "assets/characters/leedohyeon_gomin.png",
+      "bytes": 383527,
+      "sha256": "c343c03d7376f5c438377ef662fd57c970739cb16a9a7c0dbbf72857446f283b"
+    },
+    {
+      "path": "assets/characters/leedohyeon_happy.png",
+      "bytes": 336310,
+      "sha256": "6e1926f493ad9f3f0381da047d6c7a7ecfa4c346831cc40a8843d8e04a294dbb"
+    },
+    {
+      "path": "assets/characters/jiphyeonjeon_basic.png",
+      "bytes": 1913696,
+      "sha256": "e4750a3db6a3a317ff06901a18721f7d0757c621552f1104c8402e67c4eda86d"
+    },
+    {
+      "path": "assets/characters/jiphyeonjeon_thinking.png",
+      "bytes": 1951643,
+      "sha256": "44bbfa1f17d86b8fb36e2bb1c84c2bcfda9fb056f8214666f0bac8ca8b877a56"
+    },
+    {
+      "path": "assets/characters/scholars_sanghyeong.png",
+      "bytes": 1259337,
+      "sha256": "bed8334ef1e5e6a2d1b01d3a3d5e101b65bd7f158fd20780dd9dee1b5b3ce3fc"
+    },
+    {
+      "path": "assets/characters/scholars_gahoek.png",
+      "bytes": 1392585,
+      "sha256": "97cb1eaba83336175a319ba8fc80af11e580d9b502a31ea9853e7c1f12557d19"
+    },
+    {
+      "path": "assets/characters/scholars_hapseong.png",
+      "bytes": 1516501,
+      "sha256": "09bcb269f901d45e386cbb31b1415bee64c2bbc6d2895fd4eac7bb83644f3ddf"
+    },
+    {
+      "path": "assets/backgrounds/bg_jiphyeonjeon.png",
+      "bytes": 2469491,
+      "sha256": "7845be19db7ee6688a4020e8bdb9d36048248ae44645b70f0e23058367092f0f"
+    },
+    {
+      "path": "assets/backgrounds/bg_jiphyeonjeon_sanghyeong.png",
+      "bytes": 2331840,
+      "sha256": "a7f63605a7a916f8d98c43674bb7ddfb4a0926f5a9fd9c0dac5b1897fb143c54"
+    },
+    {
+      "path": "assets/backgrounds/bg_jiphyeonjeon_gahoek.png",
+      "bytes": 2412344,
+      "sha256": "1e3657f20cce0bb9e319b5a45a9b83e1554b67265be661ffc652004c42206b2d"
+    },
+    {
+      "path": "assets/backgrounds/bg_jiphyeonjeon_hapseong.png",
+      "bytes": 2412858,
+      "sha256": "5f845503202eefce2039888b6f0ff31b1b7287dbaf12bc4dabf16900ddf7e017"
+    },
+    {
+      "path": "assets/learning/principle_giyeok.png",
+      "bytes": 176122,
+      "sha256": "40162026ee3f191447171c5af9cfc14e0f03249e85f8c0f982d99ee8171a3d39"
+    },
+    {
+      "path": "assets/learning/principle_nieun.png",
+      "bytes": 175926,
+      "sha256": "ff2943bffbaefaf85be470d2a2da3c679dcdd234ec2fb73e8337996fc195a0d0"
+    },
+    {
+      "path": "assets/learning/principle_mieum.png",
+      "bytes": 166054,
+      "sha256": "308c5c997d3d1ad004b2d2dc3fd9dfa75c002775e51451c813e85b5d25d191d2"
+    },
+    {
+      "path": "assets/learning/principle_siot.png",
+      "bytes": 184936,
+      "sha256": "1c1663ec6e90bb720cf4a2ed9fbaeaa5978c898eade92490d6575efa3111eec7"
+    },
+    {
+      "path": "assets/learning/principle_ieung.png",
+      "bytes": 181842,
+      "sha256": "98fa5561bb7aa739988a124be9b8d7c6108b4733d01c4aa1a77f49101bbd2410"
+    },
+    {
+      "path": "assets/learning/principle_araea.png",
+      "bytes": 266437,
+      "sha256": "5668e962c49d8c70b4daa0ed28a1eaaa240394001a487c71da114c98baf5d645"
+    },
+    {
+      "path": "assets/learning/principle_eu.png",
+      "bytes": 239572,
+      "sha256": "649fa180fcefc3873ac4eeed47d7627d1f6dd9c453b5752b94460fb3cf77551c"
+    },
+    {
+      "path": "assets/learning/principle_i.png",
+      "bytes": 310478,
+      "sha256": "141529214b5f0f6c51b81c4cc5f0fd02f5658a3ecdb0d1367fd3575eac90062f"
+    },
+    {
+      "path": "assets/fonts/NanumBrushScript-OFL.txt",
+      "bytes": 4534,
+      "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+    },
+    {
+      "path": "assets/fonts/NanumBrushScript-Regular.ttf",
+      "bytes": 3564804,
+      "sha256": "27ceaf578c96f594cdf07fe0181b251790acbb746a164e45c1f6473f89911a31"
+    },
+    {
+      "path": "assets/fonts/NanumMyeongjo-OFL.txt",
+      "bytes": 4497,
+      "sha256": "8eb1c1019fe7fe6d0b6e7d7bbbba1d9cbdd969d8c5f26455708f6cfb8a77284c"
+    },
+    {
+      "path": "assets/fonts/NanumMyeongjo-Regular.ttf",
+      "bytes": 3058408,
+      "sha256": "7ed9e8653a8ed04285d51dc343ffea6eb3d9c73afc27383ea8929ee4ffd03205"
+    },
+    {
+      "path": "assets/characters/sejong_basic.png",
+      "bytes": 1213751,
+      "sha256": "fc7cf4f9739ad86d17af47a99c5300ae6551d115775baa6ccdc1fc81e2692909"
+    },
+    {
+      "path": "assets/characters/sejong_smile.png",
+      "bytes": 1265950,
+      "sha256": "aeb8f131294fd14b8ca289ad55a6067856fa2a6ff2267e6124e1bec5eea2c35e"
+    },
+    {
+      "path": "assets/characters/sejong_serious.png",
+      "bytes": 1254896,
+      "sha256": "7bf04f2e2900bb9158e32256fcd8f5496a878282c90501633ca885d9e49d79a4"
+    },
+    {
+      "path": "assets/characters/sejong_worried.png",
+      "bytes": 1251586,
+      "sha256": "8ad4fb2c431b6bceb4ace08e6e80c01539f01a2b06e7aa61f7dc4420faa8b85e"
+    },
+    {
+      "path": "responsive.css",
+      "bytes": 8580,
+      "sha256": "c1a279366d756a183668bf4cc913049e0c7d9a3215c5a6c18382eedf2ecabb11"
+    },
+    {
+      "path": "responsive.js",
+      "bytes": 3969,
+      "sha256": "fc578f53c0d0e71c5465a82ddd0944ac134902b98d76c0f0c15af68eafffef3b"
+    }
+  ],
+  "checks": {
+    "original_runtime_files_copied_byte_for_byte": true,
+    "project_prefix": "/Project_Hunminjeongeum/",
+    "filename_case_checked": true,
+    "browser_executed": false,
+    "game_executed": false,
+    "source_runtime_files_copied_byte_for_byte": true,
+    "pc_styles_and_game_logic_unchanged": true
+  },
+  "note_latest_update": "3차시 보완 2건. (1) NPC 4명의 표정 전환 빈도를 높임: data.js chapter3.npcChange의 각 대사를 다시 검토해 인사/회상/설명/변화/작별 흐름에 맞춰 happy/gomin/basic 전환 지점을 추가(예: 인사 중간에 basic·gomin을 끼워 넣어 한 표정이 여러 장면에 이어지지 않도록)하고, 질문 선택 대기 중(idle) 표정도 캐릭터별로 지정(idleExpression: 김만복 happy, 나머지 basic). 이미지 파일·매핑·위치·크기·preload 방식은 이전 수정 그대로 유지. (2) 설정에 '3차시 초기화' 버튼 추가: requestChapter3Reset()/confirmChapter3Reset()으로 확인 모달(\"3차시의 학습 기록을 초기화할까요? 1차시와 2차시의 기록은 유지됩니다.\")을 띄우고, 확인 시 checkpoint3/royal3IntroDone/royal3Line/changeCards/changeAsked/chapter3Reflection/royal3bLine/chapter3Done만 기본값으로 되돌림(1·2차시 필드, 닉네임, 설정은 그대로). 설정 하단 초기화 버튼 순서를 2차시 초기화→3차시 초기화→모든 진행 기록 초기화로 정리. 기존 2차시 초기화·전체 초기화 기능은 변경하지 않음. 3차시 NPC 이미지 렌더링 방식을 1차시와 동일한 bounds-정규화 스프라이트 rig로 교체: npc3Sprite()/setNPC3Expression()/mountNPC3Sprite() 신규 작성(1차시의 npcSprite()/setNPCExpression()/mountNPCSprite()·D.npcVisuals는 전혀 수정하지 않고, 읽기만 하는 방식으로 재사용). 기존의 단일 <img src 교체> 방식을 버리고, basic/gomin(1차시 자료)·happy(신규 bounds 측정값, data.js chapter3.npcHappyVisual) 세 프레임을 모두 같은 bounds 높이 기준으로 정규화해 배치 → 표정이 바뀌어도 발 위치·중심·크기가 흔들리지 않고, 원본 PNG를 그대로(확대·왜곡 없이) 선명하게 표시, 두 프레임 모두 decode() 완료 후 opacity로 전환해 깜빡임·저화질 표시 없이 preload됨. data.js의 각 NPC 대사에는 happy(반갑게 인사·긍정적 변화·작별)/gomin(과거·학습 과정의 어려움, 1차시 'gomin' 이미지 재사용)/basic(차분한 설명) 3단계 expression을 정확한 장면 기준에 맞게 다시 부여(김만복은 원래 성격상 gomin/happy 2단계만 사용). 학생/NPC 대사 색상 구분(.npc-scene[data-speaker])은 유지. 3차시 대사·선택지 내용, 배경, 기록 저장 구조, 버튼 디자인, 1·2차시 전체 구조는 변경하지 않음.",
+  "note_previous_update": "3차시 보완: ① map3notice()에서 '이 마을과 인물들의 이야기는 역사적 사실을 바탕으로 구성한 가상의 상황입니다' 안내문을 삭제(프롤로그에서 이미 안내, villageNotice.fiction 필드도 제거). ② npc3() 장면에 1차시와 같은 .npc-scene 클래스와 data-speaker 속성을 적용해 학생/NPC 대사 색상·화자 이름 배경이 1차시와 동일한 색상으로 자동 구분되도록 수정(새 CSS 없이 기존 .npc-scene[data-speaker] 규칙 재사용). ③ chapter3.npcChange의 각 NPC 대사에 expression('happy'/'basic') 태그를 추가하고, npc3()가 대화 내용에 따라 캐릭터 이미지를 기존 기본 이미지와 새 '밝은 표정' 이미지 사이에서 자연스럽게 전환(이미지만 페이드 전환, 화면 전체를 다시 그리지 않음: 같은 인물인 동안 .npc3-scene을 재사용). 반갑게 인사·기쁜 변화·마무리 장면은 밝은 표정, 1차시 어려움 회상·배우는 과정의 어려움을 말하는 장면은 기본 이미지로 매핑. NPC 대사·선택지 내용, 캐릭터 위치·크기, 배경, 대화창 디자인, 기록 수집·저장·화면 이동 기능은 변경하지 않음. 1·2차시 코드도 변경하지 않음. 3차시 「한글 홍보 프로젝트」 신규 구현: 메인 화면의 3차시 버튼을 활성화(data-action=\"start3\")하고 세종 도입 대화(royal3, 최초 1회만 표시·royal3IntroDone으로 관리) → 마을 재방문 안내(map3notice) → 1차시와 동일한 마을 지도/장소 배치를 재사용한 map3 → NPC 4명과의 변화 대화(npc3, 1차시 npc()와 같은 intro/choices/question/answer 흐름을 재사용하되 표정 전환 없는 3차시 전용 '밝은 모습' 이미지 1장만 사용: bakyeonhwa_happy.png/choiducksu_happy.png/leedohyeon_happy.png/kimmanbok_happy.png) → 백성들의 변화 기록 비교 화면(compare3, 1차시 실제 고충을 바탕으로 작성한 이전/이후 카드 4장 + '나의 생각' 소감 입력) → 세종과의 마지막 대화(royal3b) → 완료 화면까지 전체 플로우를 구현. defaults()/로드 검증에 checkpoint3·royal3IntroDone·royal3Line·changeCards·changeAsked·chapter3Reflection·royal3bLine·chapter3Done 필드 추가. render()/updateHeader()의 화면 레퍼토리에 royal3/map3notice/map3/npc3/compare3/royal3b 추가, 'npc3'는 체크포인트에 포함하지 않아(1차시 'npc'와 동일한 방식) 새로고침 시 항상 map3로 복귀. '나의 기록'에 '백성들의 변화 기록' 탭 추가(변화 기록 4개 수집 후 열람·수정 가능). 1·2차시의 기존 화면·기능·저장 데이터는 변경하지 않음.\n\n[이전 업데이트 이력] 상단바 오른쪽 '처음으로' 버튼을 '메인으로'로 이름을 바꾸고 작은 집 아이콘(인라인 SVG)을 앞에 추가(.home-button/.icon-home 스타일만 추가, 기존 위치·색상·크기·버튼 디자인은 유지). 버튼의 동작(data-action=\"home\" → setScreen('home', false))은 그대로이며, 이는 오프닝을 재생하지 않고 1·2·3차시를 선택하는 메인 화면으로 바로 이동하고 checkpoint를 변경하지 않아 학습 기록이 초기화되지 않음. 모음 기본자 상형/합성 원리의 용어 오류 수정: app.js의 합성 원리 학자 대사(composeBridgeLines/composeBridgeLine3) 중 '하늘 기본자(ㆍ)'처럼 '하늘/땅/사람'을 글자 이름처럼 쓰던 표현을 '모음 기본자 ㆍ(하늘을 본뜸)' 형태로 수정. data.js의 chapter2.compose(guideLine/correctFeedback/completeFeedback/summary.principle/완료 대사)도 동일하게 정리하고, 완료 대사를 \"아주 잘했습니다. 모음 기본자 ㆍ, ㅡ, ㅣ를 결합하여 새로운 모음자를 만드는 원리를 알아보았습니다.\"로 교체. 합성 활동 시작 전에 모음 기본자 확인 문제(basicQuiz: ①ㄱㄴㅁ ②ㆍㅡㅣ(정답) ③ㅏㅓㅗ)를 추가(새 phase 'basicCheck', renderComposeBasicCheck()/selectComposeBasicCheck()/proceedToComposeBuild(), startComposeActivities()가 build 대신 basicCheck로 이동), 정답 확인 후 상형 원리 설명을 보여주고 기존 합성 활동으로 자연스럽게 이어짐. 「나의 해례 기록」의 합성 원리 항목 요약문도 동일하게 정리. 상형 원리(모음) 활동의 vowelActivities/vowelMatchSuccess는 이미 '모음 기본자'로 정확히 작성되어 있어 변경하지 않음. 기존 배경·학자 이미지·UI·드래그 기능·학습 기록·화면 이동 구조는 변경하지 않음. 2차시 「나의 해례 기록」 활동 신규 추가: 가획 원리 완료 화면과 합성 원리 완료 화면에 '나의 해례 기록 작성하기' 버튼을 추가해 상형·가획·합성 세 원리를 각각 한 줄씩 짧게 정리하는 기록 화면(hapye()/hapyeView(), 입력당 80자)으로 연결. 기존 1차시 '훈민정음 해례 초안' 보고서 기능(reportMarkup/report/reportView, study-mode/heading 등 화면 구조)을 그대로 재사용해 저장(hapyeRecord: answers/draft/savedAt)·수정·'나의 기록' 모달 3번째 탭(해례 기록) 열람을 구현. 두루마리/한지 느낌의 전용 디자인(.hapye-scroll 등, 고딕체 기본, 기존 베이지·먹색 팔레트 유지)과 하단 Padlet 캡처 공유 안내 문구를 추가(이미지 다운로드·자동 업로드 기능 없음). defaults()/로드 검증에 hapyeRecord 필드 추가(shapeActivitySchema로 보호), checkpoint2 화이트리스트에 'hapye' 추가, '2차시 초기화' 시 hapyeRecord도 함께 초기화. 1차시 보고서·기존 상형/가획/합성 학습 기능과 자유 선택 기능은 변경하지 않음. 2차시 도입 흐름을 다시 수정: 직전 수정에서 세종-학자 도입 대화 완료 시 상형 원리로 바로 연결되던 것을 되돌리고, 세종(royal2)·학자 인사(scholar) 대화가 끝나면 항상 '집현전 글자 공방' 원리 선택 화면(workshop)으로 이동하도록 finishRoyal2Intro()를 단순화(firstTime 분기 제거). scholar() 완료 버튼 라벨도 '집현전 글자 공방으로 →'로 고정. 세종 대화는 2차시 전체의 공통 도입부이며, 완료 후 상형·가획·합성 중 하나를 선택해야 각 원리의 기존 학자 대화와 탐구가 시작됨. royal2IntroDone 필드와 resume2()/‘2차시 초기화’ 로직은 이전 수정 그대로 유지(재진입 시 원리 선택 화면으로 바로 이동, 초기화 시 함께 초기화). 상형·가획·합성 자유 선택 기능과 기존 학자 대사·탐구 활동·이미지는 변경하지 않음. 2차시 탐구 화면(상형/가획/합성)에서 .scene-location(현재 탐구실 표시)·.explore-nav(탐구 메뉴 버튼)·.sanghyeong-title(활동 제목/진행도 문구)의 상단 위치가 서로 겹치던 문제를 좌표 재배치로 해결(글꼴·색상·버튼 디자인은 변경 없음, 세 요소를 세로로 겹치지 않게 재배열). 설정 화면에 '2차시 초기화' 버튼을 추가해 상형·가획·합성의 진행 상태(checkpoint2, royal2Line, scholarLine, shapeActivityIndex, vowelActivityIndex, vowelMatchDone, shapePrincipleDone, gahoekSeriesIndex, gahoekStarted, gahoekSummary, gahoekDone, composeSeriesIndex, composeStarted, composeDone)만 기본값으로 되돌리도록 구현(확인 모달 포함, 취소 시 변화 없음). 1차시 기록·닉네임·설정·3차시 관련 필드와 '모든 진행 기록 초기화' 기능은 변경하지 않음. 합성 원리 탐구(compose())에서 가획 원리와 같은 배경/학자 이미지(bg_jiphyeonjeon_gahoek.png, scholars_gahoek.png)를 쓰고 있던 것을 확인하고, 합성 원리 전용 이미지(bg_jiphyeonjeon_hapseong.png, scholars_hapseong.png, 둘 다 assets에 이미 존재)로 교체(.hapseong-bg 스타일 추가, scene-bg 클래스와 ambient 이미지 경로만 수정). 상형/가획 화면과 기존 UI·기능은 변경하지 않음. 집현전 글자 공방의 원리 잠금을 해제(개발·테스트 편의를 위해 상형/가획/합성을 완료 여부와 관계없이 자유롭게 선택 가능하도록 변경, 안내 문구와 시작 전/학습 중/완료 상태 표시는 그대로 유지)하고, 세 번째 활동인 합성 원리 탐구를 신규 구현. 하늘(ㆍ)·땅(ㅡ)·사람(ㅣ) 기본자를 결합해 초출자 ㅗ·ㅜ·ㅏ·ㅓ를 만드는 활동으로, 가획 원리와 동일한 좌표 기반 드롭존 방식(평소에는 숨겨져 있고 하늘 조각을 드래그하거나 클릭해 배치 모드로 전환하면 점선으로 표시)을 재사용해 학생이 직접 조각을 배치하도록 구성. 각 단계마다 조작 안내, 정답 시 글자 변화 애니메이션과 성공 피드백, 오답 시 안내 및 재시도, 마지막 단계 이후 원리 정리 카드를 제공. 병서·합용 관련 활동은 포함하지 않음. 상형 원리·가획 원리의 기존 코드와 저장 데이터는 변경하지 않음.",
+  "updated_date_kst": "2026-11-15",
+  "documentation_files": [
+    "RESPONSIVE.md"
+  ]
+}
