@@ -14,9 +14,23 @@ html.touch-layout{--hud:var(--touch-hud,70px);background:#0c110e;-webkit-text-si
 .touch-layout.touch-viewport-ready #game-shell{visibility:visible}
 .touch-layout button,.touch-layout a,.touch-layout summary,.touch-layout select{touch-action:manipulation}
 
-/* Neutralize physical viewport units inside the virtual 1280 x 720 scene. */
-.touch-layout .game-logo{font-size:179.2px;top:7px;transform:translate(0,0) scale(.2)}
-.touch-layout .game-logo.logo-grand{transform:translate(-50%,-50%) scale(1)}
+/* Neutralize physical viewport units inside the virtual 1280 x 720 scene.
+   font-size:179.2px = 14vw of the 1280-wide virtual canvas (the clamp()'s
+   middle branch), applied to every state on purpose: PC only ever varies
+   the logo's rendered size via transform:scale(), never font-size, so
+   pinning font-size here (rather than letting it resolve against the real,
+   much narrower device viewport) reproduces the exact desktop proportions
+   before the whole #game-shell is scaled down to fit the device. top and
+   transform are scoped to the plain docked state only (see history: they
+   used to sit on the bare ".game-logo" selector, which tied in specificity
+   with ".game-logo.logo-grand"/".logo-home" in styles.css and, being later
+   in the cascade, overrode their centered top/transform). .logo-grand and
+   .logo-home are left with NO touch-specific transform override below, so
+   they inherit styles.css's own scale(1.25)/scale(.64) untouched — a
+   previous scale(1) override here had been quietly shrinking the opening
+   title below its intended size; removed. */
+.touch-layout .game-logo{font-size:179.2px}
+.touch-layout .game-logo:not(.logo-grand):not(.logo-home){top:7px;transform:translate(0,0) scale(.2)}
 .touch-layout .logo-subtitle{font-size:var(--touch-note)}
 .touch-layout .npc-sprite-rig{width:calc(547.2px * var(--sprite-aspect))}
 .touch-layout #game{background-size:100% 100%,contain;background-repeat:no-repeat}
@@ -55,14 +69,16 @@ html.touch-layout{--hud:var(--touch-hud,70px);background:#0c110e;-webkit-text-si
 .touch-layout .intro-copy p{font-size:var(--touch-note);line-height:1.7}
 .touch-layout .intro-copy h2{font-size:48px}
 .touch-layout .intro-copy .eyebrow,.touch-layout .intro-progress{font-size:var(--touch-small)}
-.touch-layout .narration p{font-size:var(--touch-narration);line-height:1.7}
+.touch-layout .narration-text p{font-size:var(--touch-narration);line-height:1.7}
 .touch-layout .narration-index{font-size:var(--touch-small)}
+.touch-layout .character.sejong,.touch-layout .character.scholar{height:86%;bottom:6%}
 .touch-layout .opening-controls .skip{font-size:var(--touch-ui);min-height:var(--touch-hit-height)}
 .touch-layout #advance-hint{font-size:var(--touch-small);right:22px;bottom:4px}
 .touch-layout #toast{font-size:var(--touch-body)}
 
 /* Short landscape phone displays get readable dialogue without cutting the scene. */
 .touch-layout.touch-compact .dialogue{height:35%;max-height:35%;padding:8px 22px;row-gap:4px}
+.touch-layout.touch-compact .character.sejong,.touch-layout.touch-compact .character.scholar{height:78%;bottom:6%}
 .touch-layout.touch-compact .speaker{gap:14px}
 .touch-layout.touch-compact .speaker small{letter-spacing:0}
 .touch-layout.touch-compact .npc-scene[data-phase="choices"] .dialogue{height:22%;max-height:22%}
