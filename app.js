@@ -825,13 +825,13 @@
     const quote=`<p class="scholar-quote">“${esc(item.guideLine)}”</p>`;
     const display=composeFlow.placed?item.result:item.base;
     const boxClass=composeFlow.placing&&!composeFlow.placed?'placing':'';
-    const zones=composeFlow.placed?'':item.targets.map(t=>`<button class="stroke-zone ${composeFlow.wrongTarget===t.id?'wrong':''}" style="left:${t.x}%;top:${t.y}%" data-compose-target="${t.id}" aria-label="하늘 조각을 놓을 위치"></button>`).join('');
-    const piece=composeFlow.placed?'':`<button class="stroke-piece ${composeFlow.placing?'selected':''}" draggable="true" data-compose-piece="true" aria-pressed="${!!composeFlow.placing}"><span class="stroke-piece-bar compose-dot"></span><small>하늘(ㆍ) 조각 — 끌거나 눌러서 놓기</small></button>`;
+    const zones=composeFlow.placed?'':item.targets.map(t=>`<button class="stroke-zone ${composeFlow.wrongTarget===t.id?'wrong':''}" style="left:${t.x}%;top:${t.y}%" data-compose-target="${t.id}" aria-label="'ㆍ' 조각을 놓을 위치"></button>`).join('');
+    const piece=composeFlow.placed?'':`<button class="stroke-piece ${composeFlow.placing?'selected':''}" draggable="true" data-compose-piece="true" aria-pressed="${!!composeFlow.placing}"><span class="stroke-piece-bar compose-dot"></span><small>'ㆍ' 조각 — 끌거나 눌러서 놓기</small></button>`;
     const extra=(isLast&&g.completeFeedback)?`<p class="quiz-feedback correct">${esc(g.completeFeedback).split('\n').join('<br>')}</p>`:'';
     const feedback=composeFlow.placed
       ?`<p class="quiz-feedback correct">${esc(item.correctFeedback).split('\n').join('<br>')}</p>${extra}<div class="action-row"><button class="text-button" data-action="compose-build-retry">다시 만들어 보기</button><button class="primary" data-action="compose-build-next">다음 →</button></div>`
       :(composeFlow.wrong?`<p class="quiz-feedback incorrect">${esc(item.incorrectFeedback)}</p>`:'');
-    return `<div class="study-card stroke-card"><h2>${esc(item.cardTitle)}</h2>${quote}<p class="instruction">${esc(item.instruction)}</p><p class="hint">하늘 조각을 글자 위로 끌어다 놓거나, 조각을 누른 뒤 놓을 자리를 눌러 보세요.</p><div class="stroke-glyph-box ${boxClass}">${zones}<div class="stroke-glyph ${composeFlow.placed?'done':''}">${esc(display)}</div></div><div class="stroke-tray">${piece}</div>${feedback}</div>`;
+    return `<div class="study-card stroke-card"><h2>${esc(item.cardTitle)}</h2>${quote}<p class="instruction">${esc(item.instruction)}</p><p class="hint">'ㆍ' 조각을 글자 위로 끌어다 놓거나, 조각을 누른 뒤 놓을 자리를 눌러 보세요.</p><div class="stroke-glyph-box ${boxClass}">${zones}<div class="stroke-glyph ${composeFlow.placed?'done':''}">${esc(display)}</div></div><div class="stroke-tray">${piece}</div>${feedback}</div>`;
   }
   function renderComposePrinciple(){
     const s=D.chapter2.compose.summary;

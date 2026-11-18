@@ -302,51 +302,51 @@ window.GAME_DATA = {
       buildSeries:[
         {
           id:'o',base:'ㅡ',result:'ㅗ',
-          guideLine:"먼저 모음 기본자 'ㅡ'(땅)에 'ㆍ'(하늘)을 결합해 보겠습니다.",
+          guideLine:"먼저 모음 기본자 'ㅡ'와 'ㆍ'를 결합해 보겠습니다.",
           cardTitle:'모음 기본자를 결합해 보세요',
-          instruction:"하늘 조각을 'ㅡ'의 위쪽에 놓아 'ㅗ'를 만들어 보세요.",
+          instruction:"'ㅡ'의 위쪽에 'ㆍ'를 놓아 'ㅗ'를 만들어 보세요.",
           targets:[
             {id:'correct',x:50,y:18,correct:true},
             {id:'wrong1',x:50,y:82,correct:false}
           ],
-          correctFeedback:"잘하셨습니다!\n'ㅡ' 위에 'ㆍ'을 더하니 'ㅗ'가 되었습니다.",
-          incorrectFeedback:'하늘 조각이 놓이는 위치를 다시 살펴보세요.'
+          correctFeedback:"잘하셨습니다!\n모음 기본자 'ㅡ'의 위쪽에 'ㆍ'를 결합하여 'ㅗ'를 만들었습니다.",
+          incorrectFeedback:"'ㆍ' 조각이 놓이는 위치를 다시 살펴보세요."
         },
         {
           id:'u',base:'ㅡ',result:'ㅜ',
-          guideLine:"이번에는 'ㅡ'의 다른 자리에 'ㆍ'을 놓아 보겠습니다.",
+          guideLine:"이번에는 모음 기본자 'ㅡ'의 다른 자리에 'ㆍ'를 놓아 보겠습니다.",
           cardTitle:'모음 기본자를 다시 결합해 보세요',
-          instruction:"하늘 조각을 'ㅡ'의 아래쪽에 놓아 'ㅜ'를 만들어 보세요.",
+          instruction:"'ㅡ'의 아래쪽에 'ㆍ'를 놓아 'ㅜ'를 만들어 보세요.",
           targets:[
             {id:'correct',x:50,y:82,correct:true},
             {id:'wrong1',x:50,y:18,correct:false}
           ],
-          correctFeedback:"잘하셨습니다!\n'ㅡ' 아래에 'ㆍ'을 더하니 'ㅜ'가 되었습니다.",
-          incorrectFeedback:'하늘 조각이 놓이는 위치를 다시 살펴보세요.'
+          correctFeedback:"잘하셨습니다!\n모음 기본자 'ㅡ'의 아래쪽에 'ㆍ'를 결합하여 'ㅜ'를 만들었습니다.",
+          incorrectFeedback:"'ㆍ' 조각이 놓이는 위치를 다시 살펴보세요."
         },
         {
           id:'a',base:'ㅣ',result:'ㅏ',
-          guideLine:"이제 모음 기본자 'ㅣ'(사람)에 'ㆍ'을 결합해 보겠습니다.",
+          guideLine:"이제 모음 기본자 'ㅣ'와 'ㆍ'를 결합해 보겠습니다.",
           cardTitle:'모음 기본자를 결합해 보세요',
-          instruction:"하늘 조각을 'ㅣ'의 오른쪽에 놓아 'ㅏ'를 만들어 보세요.",
+          instruction:"'ㅣ'의 오른쪽에 'ㆍ'를 놓아 'ㅏ'를 만들어 보세요.",
           targets:[
             {id:'correct',x:80,y:50,correct:true},
             {id:'wrong1',x:20,y:50,correct:false}
           ],
-          correctFeedback:"잘하셨습니다!\n'ㅣ'의 오른쪽에 'ㆍ'을 더하니 'ㅏ'가 되었습니다.",
-          incorrectFeedback:'하늘 조각이 놓이는 위치를 다시 살펴보세요.'
+          correctFeedback:"잘하셨습니다!\n모음 기본자 'ㅣ'의 오른쪽에 'ㆍ'를 결합하여 'ㅏ'를 만들었습니다.",
+          incorrectFeedback:"'ㆍ' 조각이 놓이는 위치를 다시 살펴보세요."
         },
         {
           id:'eo',base:'ㅣ',result:'ㅓ',
-          guideLine:"'ㅣ'의 다른 자리에도 'ㆍ'을 놓아 보겠습니다.",
+          guideLine:"모음 기본자 'ㅣ'의 다른 자리에도 'ㆍ'를 놓아 보겠습니다.",
           cardTitle:'모음 기본자를 다시 결합해 보세요',
-          instruction:"하늘 조각을 'ㅣ'의 왼쪽에 놓아 'ㅓ'를 만들어 보세요.",
+          instruction:"'ㅣ'의 왼쪽에 'ㆍ'를 놓아 'ㅓ'를 만들어 보세요.",
           targets:[
             {id:'correct',x:20,y:50,correct:true},
             {id:'wrong1',x:80,y:50,correct:false}
           ],
-          correctFeedback:"잘하셨습니다!\n'ㅣ'의 왼쪽에 'ㆍ'을 더하니 'ㅓ'가 되었습니다.",
-          incorrectFeedback:'하늘 조각이 놓이는 위치를 다시 살펴보세요.'
+          correctFeedback:"잘하셨습니다!\n모음 기본자 'ㅣ'의 왼쪽에 'ㆍ'를 결합하여 'ㅓ'를 만들었습니다.",
+          incorrectFeedback:"'ㆍ' 조각이 놓이는 위치를 다시 살펴보세요."
         }
       ],
       completeFeedback:"훌륭합니다!\n모음 기본자 'ㆍ'를 'ㅡ', 'ㅣ'의 위아래와 좌우에 결합하여\n'ㅗ·ㅜ·ㅏ·ㅓ' 네 모음을 만들어 보았습니다.",
